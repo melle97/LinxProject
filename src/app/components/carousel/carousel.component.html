@@ -1,0 +1,22 @@
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+<div class="container responsive-grid">
+  <mat-card *ngFor="let carouselImages of carouselImages">
+    <mat-card-header>
+      <mat-card-title>{{ carouselImages.title }} </mat-card-title>
+    </mat-card-header>
+    <br />
+    <img mat-card-image [src]="carouselImages.imageUrl" />
+    <mat-card-content>
+      <br />
+<!--      weeknummer en geldigheid acties, coop & coopcompact-->
+      <p>
+        {{ carouselImages.description }}
+      </p>
+      <br>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-button>Browse</button>
+    </mat-card-actions>
+  </mat-card>
+</div>
+
